@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="1.0">
+    <info organisation="com.99bill" module="limit"/>
+    <configurations defaultconfmapping="build->default;compile->compile(*),master(*);test,runtime->runtime(*),master(*)">
+        <conf name="build"/>
+         <conf name="default"/>
+        <conf name="compile"/>
+         <conf name="zip"/>
+        <conf name="test"/>
+        <conf name="test" extends="compile"/>
+        <conf name="runtime" extends="compile"/>
+    </configurations>
+    <publications>
+        <artifact ext="war"/>
+    </publications>
+    <dependencies>
+        <dependency org="j2ee" name="servlet-api" rev="2.4" conf="compile" transitive="true"/>
+        <dependency org="org.spring" name="spring" rev="2.5.5" conf="runtime->default"/>
+        <dependency org="org.spring" name="spring-test" rev="2.5.6" conf="test" transitive="false"/>
+    </dependencies>
+</ivy-module>    

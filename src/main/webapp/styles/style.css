@@ -1,0 +1,88 @@
+/* global */
+body {
+	margin: 0px;
+	padding: 0px;
+	font-size: .78em;
+	color: #333;
+}
+a {
+	color: #4d87ce;
+}
+img {
+	border: 0px;
+}
+h2 {
+	font-size: 22px;
+	margin: 5px 0 8px 0px;
+	text-align:center;
+}
+/* form */
+input {
+	border: 1px solid #999;
+	margin: 0px 5px;
+	padding: 2px;
+}
+input.button {
+	font-weight: bold;
+	background: #FFF;
+	padding: 0px 3px;
+}
+/* table */
+table {
+	border-collapse: collapse;
+	border: none;
+	width: 100%;
+}
+th {
+	font-weight: bold;
+	font-size: 14px;
+	border: solid #999 1px;
+	background-color: #D5DEDB;
+	height:28px;
+}
+td {
+	font-size: 14px;
+	border: solid #CCC 1px;
+	color: #555;
+	height:22px;
+}
+td.right {
+	text-align: right;
+	font-weight: bold;
+	background-color: #F3F8F7;
+}
+table.noborder th, table.noborder td {
+	border: none;
+}
+.pagination {
+	height:35px;
+	width:100%;
+	font-family: "����_GB2312";
+	font-size: 15px;
+	color:#333333;
+	background-color:#CCEECC;
+	font-weight:normal;
+	border: 0px;
+}
+.pagination-num {
+	font-family: "Arial";
+	font-size: 16px;
+	color:background;
+	font-weight: normal;
+}
+.top{background:url(../images/top_bg.gif) no-repeat left; height:63px;}
+.top_bg2{background:url(../images/top_bg2.gif) repeat-x; height:63px;}
+
+/*comboClock*/
+.table-inner{
+    width: 100%;
+    background-color: #FFFFFF;
+    font-size: 18px;
+    border: 0px;
+}
+.input_noborder{
+    color: #FF1111;
+    font-size: 16px;
+    border: 0px;
+}
+

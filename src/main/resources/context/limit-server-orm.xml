@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Application context definition for ORM -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="propertyConfigurer4Server" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="ignoreUnresolvablePlaceholders" value="true"/>
+        <property name="locations">
+            <list>
+                <!-- DEV环境
+                <value>classpath:properties/if-applog-server.properties</value>
+                <value>file:////nfs/envconfig/pmd/if/if-applog-server.properties</value>
+                -->
+                <value>classpath:properties/applog-orm.properties</value>
+               <!--   <value>file:////nfs/envconfig/pmd/if/if-applog-server.properties</value> -->
+            </list>
+        </property>
+    </bean>
+  
+    
+</beans>
