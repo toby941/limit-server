@@ -18,12 +18,28 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class UpLoadController {
 
+	/**
+	 * 
+	 * @param contextName
+	 * @param poolName
+	 * @param time
+	 * @param info
+	 * @param request
+	 * @param response
+	 * @throws IOException
+	 */
 	@RequestMapping("/upload/alarm")
-	public void receiveAlarm(@RequestParam("c") String contextName,
-			@RequestParam("p") String poolName, @RequestParam("t") String time,
-			@RequestParam("i") String info, HttpServletRequest request,
-			HttpServletResponse response) throws IOException {
+	public void receiveAlarm(
+			@RequestParam(value = "c", required = false) String contextName,
+			@RequestParam("pn") String poolName,
+			@RequestParam("t") String time, @RequestParam("i") String info,
+			HttpServletRequest request, HttpServletResponse response)
+			throws IOException {
 		response.getWriter().println("alarm upload done");
+		System.out.println(poolName);
+		System.out.println(time);
+		System.out.println(info);
+
 	}
 
 	@RequestMapping("/upload/snapshot")
